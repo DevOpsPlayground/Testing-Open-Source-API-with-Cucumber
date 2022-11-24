@@ -7,7 +7,7 @@ Maven downloaded
 
 Setup pom.xml
 
-  <dependency>
+        <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>7.8.1</version>
