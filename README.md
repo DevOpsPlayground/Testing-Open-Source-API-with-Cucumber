@@ -259,7 +259,7 @@ Add in StepDefs:
 
 Add in Common Methods: 
 
-   public static void printResponseArray(JSONObject jsonObject) {
+    public static void printResponseArray(JSONObject jsonObject) {
         JSONArray jsonArray = jsonObject.getJSONArray("data");
         JSONObject firstElement = jsonArray.getJSONObject(0);
         System.out.println("First element from List: " + firstElement);
