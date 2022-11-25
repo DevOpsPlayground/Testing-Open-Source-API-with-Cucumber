@@ -74,7 +74,20 @@ Add step two get request
         response = httpClient.send(get, HttpResponse.BodyHandlers.ofString());
         actualCode = response.statusCode();
         System.out.println("Request: " + response);
+        } else if(requestType.equalsIgnoreCase("POST")) {
+        response = httpClient.send(post, HttpResponse.BodyHandlers.ofString());
+        actualCode = response.statusCode();
+        System.out.println("Request: " + response);
+        }else if(requestType.equalsIgnoreCase("PUT")) {
+        response = httpClient.send(put, HttpResponse.BodyHandlers.ofString());
+        actualCode = response.statusCode();
+        System.out.println("Request: " + response);
+        }else if(requestType.equalsIgnoreCase("DELETE")) {
+        response = httpClient.send(delete, HttpResponse.BodyHandlers.ofString());
+        actualCode = response.statusCode();
+        System.out.println("Request: " + response);
         }
+        
     }
 ```
 BaseUrl:
